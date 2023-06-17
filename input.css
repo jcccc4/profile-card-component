@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    *{
+        @apply font-ks text-primary ;
+    }
+}
+@layer components {
+    .circle{
+        @apply absolute min-w-circle min-h-circle max-w-circle max-h-circle lg:min-w-[978px] lg:min-h-[978px] lg:max-w-[978px] lg:max-h-[978px];
+    }
+   .card{
+        @apply w-card h-card rounded-[15px]  ;
+   }
+   .item{
+    @apply flex flex-col items-center;
+   }
+   .description{
+    @apply font-normal text-gray text-center text-secondary
+   }
+  }
